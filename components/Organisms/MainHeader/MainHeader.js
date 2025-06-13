@@ -1,13 +1,17 @@
-import classes from "./MainHeader.module.css";
 import Link from "next/link";
 
 export const MainHeader = () => {
   return (
-    <header>
-      <h1>Next.js Routing & Page Rendering</h1>
-      <nav className={classes.nav}>
-        <Link href="/">Home</Link>
-        <Link href="/news">News</Link>
+    <header id="main-header">
+      <div id="logo">
+        <Link href="/">NextNews</Link>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <Link href="/news">News</Link>
+          </li>
+        </ul>
       </nav>
     </header>
   );
