@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 export const middleware = (req) => {
-  console.log(req);
+  //console.log(req);
   return NextResponse.next();
 };
 
